@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.block {
+    display: inline-block;
+    width: 20em;
+    height: 20em;
+    background-color: lightgray;
+}
+
+.container {
+    text-align: center;
+    padding-top: 10em
+}
+
+
+}
+
+.box :first-child {
+    align-self: center;
+}
+
+
+nav {
+    flex: 2;
+}
+
+nav ul {
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a {
+    color: #5f5f79;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    transition: 0.5s
+}
+
+nav ul {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-weight: 400;
+}
+
+main > section {
+    margin: auto;
+    width: 90%
+}
+
+h1 {
+    margin: auto;
+    margin: 60px 0px 0px 0px;
+}
+
+p {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    margin: 30px 0px 0px 0px;
+    text-align: left;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+}
+
+.presentation h1 {
+    font-size: 44px;
+    font-weight: 500;
+    color: #494964;
+}
+
+.presentation p {
+    font-size: 22px;
+    margin-top: 5px;
+    color: #585772;
+}
+
+.presentation article {
+    flex: 1;
+}
+
+.presentation figure {
+    flex: 1;
+}
+
+.presentation figure img {
+    height: 60vh;
+    flex: 1;
+    margin: 150px 0px 0px 80px;
+    animation: drop 1.5s ease;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.pesentation div {
+    padding: 50px 0px 0px 0px;
+}
+
+.presentation button:nth-child(1) {
+    border: 1px solid #ffa500;
+
+    color: #ffa500;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.presentation button:nth-child(2) {
+    background: #ffa500;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+
+carousel {
+    display: flex;
+    box-sizing: content-box;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.carousel h4 {
+    color: #ffa500;
+}
+
+.carousel ul {
+    list-style: none;
+    padding-top: 3em;
+    display: flex;
+
+}
+
+.carousel img {
+    width: 13em;
+}
+
+.carousel h4 {
+    padding-top: 5em;
+    font-size: 20px;
+}
+
+.wereldkaart h5 {
+    font-size: 20px;
+    padding-top: 5em;
+    color: #ffa500;
+}
+
+.wereldkaart img {
+    width: 60em;
+    position: relative;
+    bottom: 250px;
+    top: px;
+    left: px;
+}
+
+button:hover {
+    color: black;
+}
+
+form {
+    box-sizing: border-box;
+    line-height: 5.1;
+    list-style: none;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+form input {
+    padding: 0.2em;
+}
+
+form ul {
+    list-style: none;
+    padding-left: 3em
+
+}
+.formtitle{
+    padding-left: 1em;
+    font-size: 20px
+    
+}
+
+form textarea {
+    width: 30em;
+    padding-top: 8px;
+}
+
+
+
+.formulier{
+    padding-top:10em;
+}
+
+
+
+
+
+
+
+
+
+textarea {
+    padding: .5em 1em 3em 1em;
+}
+
+input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: left;
+
+
+}
+
+.uitleg img {
+    width: 50em
+}
+
+.uitleg {
+    font-size: 17px;
+}
+
+
+.uitleg {}
+
+.uitleg p {
+    width: 50%;
+}
+
+.uitleg h3 {
+    color: #ffa500;
+
+}
+
+.login {
+    flex: 1;
+    justify-content: flex-end;
+    height: 29%;
+}
+
+
+footer {
+    background-color: black;
+    padding: 2em 0em 2em 0em;
+    margin-top: 10em;
+}
+
+
+/*dit is de animatie voor het element .presentation figure img (op de homepagina)*/
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+@media screen and (max-width: 1068px) {
+
+    .presentation {
+        flex-direction: column;
+    }
+
+    p {
+        margin-top: 3vh;
+        text-align: center;
+        font font-size: 30px;
+    }
+
+    .presentation h2 {
+        font-size: 44px;
+        font-weight: 500;
+    }
